@@ -25,7 +25,7 @@ const getQuote = async () => {
       })
       .then(function (data) {
         const randomQuote = data[Math.floor(Math.random() * data.length)];
-        const authorName = randomQuote.author ? randomQuote.author : "Uknown";
+        const authorName = randomQuote.author ? randomQuote.author : "Unknown";
         console.log(randomQuote.text.length);
         //Quote length check
         if (randomQuote.text.length > 100) {
